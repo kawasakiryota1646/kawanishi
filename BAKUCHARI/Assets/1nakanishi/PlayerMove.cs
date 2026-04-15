@@ -1,15 +1,17 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
     public float speed = 1f;
-    public float acceleration = 1f;   // ‰Á‘¬
-    public float deceleration = 1f;    // Œ¸‘¬
+    public float acceleration = 1f;
+    public float deceleration = 1f;
 
     private Rigidbody2D rb;
-    private float targetMove = 0f;     // –Ú•W‘¬“xi“ü—Íj
-    private float currentMove = 0f;    // ÀÛ‚Ì‘¬“xiŠµ«‚ ‚èj
+    private float targetMove = 0f;
+    private float currentMove = 0f;
+
+    private bool isGrounded = false; // æ¥åœ°ã—ã¦ã‚‹ã‹
 
     void Start()
     {
@@ -18,7 +20,7 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
-        // “ü—ÍiVInputSystemj
+        // å…¥åŠ›
         if (Keyboard.current.wKey.isPressed)
             targetMove = 1f;
         else if (Keyboard.current.sKey.isPressed)
@@ -26,7 +28,13 @@ public class PlayerMove : MonoBehaviour
         else
             targetMove = 0f;
 
-        // Šµ«i•âŠÔj
+        // ç©ºä¸­ãªã‚‰å‹•ã‹ã•ãªã„
+        if (!isGrounded)
+        {
+            targetMove = 0f;
+        }
+
+        // æ…£æ€§å‡¦ç†
         if (Mathf.Abs(targetMove - currentMove) > 0.01f)
         {
             if (targetMove != 0)
@@ -35,7 +43,19 @@ public class PlayerMove : MonoBehaviour
                 currentMove = Mathf.MoveTowards(currentMove, 0f, deceleration * Time.deltaTime);
         }
 
-        // ÀÛ‚ÌˆÚ“®
+        // ç§»å‹•
         rb.linearVelocity = new Vector2(currentMove * speed, rb.linearVelocity.y);
+    }
+
+    // ä½•ã‹ã«è§¦ã‚ŒãŸã‚‰æ¥åœ°
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        isGrounded = true;
+    }
+
+    // é›¢ã‚ŒãŸã‚‰ç©ºä¸­
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        isGrounded = false;
     }
 }
