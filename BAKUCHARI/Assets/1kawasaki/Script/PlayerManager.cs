@@ -30,11 +30,25 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("goal"))
+        {
+            Clear();
+        }
+    }
+
     private void Retry()
     {
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
 
+    }
+
+    private void Clear()
+    {
+
+        Debug.Log("Clear!");
     }
 
 }
