@@ -7,10 +7,15 @@ using UnityEngine.InputSystem;
 
 public class PlayerManager : MonoBehaviour
 {
+    //変数
+    bool IsGoal = false;
+    Vector3 StartPos;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        StartPos = transform.position;//初期位置の保存
     }
 
     // Update is called once per frame
@@ -22,33 +27,43 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)//地面に当たったら死亡
+    //地面に当たったら死亡
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("ground"))
+        if(!IsGoal && collision.gameObject.CompareTag("ground"))//ゴール後は死なない
         {
-            Destroy(gameObject);
+            Debug.Log("死んだ！");
+            transform.position = StartPos;
         }
     }
 
+    //ゴールに触れたとき
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("goal"))
+        if(collision.gameObject.CompareTag("goal")&&!IsGoal)
         {
-            Clear();
+            IsGoal = true;
+            StartCoroutine(Clear());
+            Debug.Log("ゴールに触れた！");
         }
     }
 
-    private void Retry()
+
+    private void Retry()//Rキーを押されたときにやり直す
     {
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
+        Debug.Log("リトライ");
 
     }
 
-    private void Clear()
+    IEnumerator Clear()//三秒経つと次のステージに行く
     {
-
+        yield return new WaitForSeconds(1.5f);
+        int currentScene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentScene + 1);
         Debug.Log("Clear!");
     }
+
 
 }
