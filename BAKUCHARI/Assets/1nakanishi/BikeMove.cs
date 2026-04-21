@@ -3,43 +3,27 @@ using UnityEngine.InputSystem;
 
 public class BikeMove : MonoBehaviour
 {
-    public float speed = 1000f;          // タイヤの回転速度
-    public float acceleration = 2000f;   // 加速の速さ
-    public float airTorque = 10f;        // 空中での回転力
+    public Rigidbody2D rearWheel;
+    public float motorSpeed = 2000f;
 
-    public WheelJoint2D rearWheel;      // 後輪（モーター）
-    private Rigidbody2D rb;
-
-    private float currentSpeed = 0f;
-
-    void Start()
+    void FixedUpdate()
     {
-        rb = GetComponent<Rigidbody2D>();
-    }
+        float moveInput = 0f;
 
-    void Update()
-    {
-        float input = 0f;
+        // 押してる間だけ入力
+        if (Keyboard.current.wKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
+        {
+            moveInput = 1f;
+        }
+        else if (Keyboard.current.sKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
+        {
+            moveInput = -1f;
+        }
 
-        // 前進・後退
-        if (Keyboard.current.wKey.isPressed)
-            input = 1f;
-        else if (Keyboard.current.sKey.isPressed)
-            input = -1f;
-
-        // タイヤ回転（ここが重要）
-        float targetSpeed = -input * speed;
-        currentSpeed = Mathf.MoveTowards(currentSpeed, targetSpeed, acceleration * Time.deltaTime);
-
-        JointMotor2D motor = rearWheel.motor;
-        motor.motorSpeed = currentSpeed;
-        rearWheel.motor = motor;
-
-        // 空中で回転（バランス操作）
-        if (Keyboard.current.aKey.isPressed)
-            rb.AddTorque(airTorque);
-
-        if (Keyboard.current.dKey.isPressed)
-            rb.AddTorque(-airTorque);
+        // 押してる時だけ回す
+        if (moveInput != 0f)
+        {
+            rearWheel.AddTorque(-moveInput * motorSpeed);
+        }
     }
 }
