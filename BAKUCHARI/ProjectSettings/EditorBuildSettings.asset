@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/1kawasaki/Scene/StageSelect.unity
     guid: 5702d856e2a6d5247b1f760c021b2fe3
   - enabled: 1
+    path: Assets/1kawasaki/Scene/stage1.unity
+    guid: 3b59aa0e5cb4ffe439d494279d9994d2
+  - enabled: 0
     path: Assets/1kawasaki/Scene/myscene.unity
     guid: 12346976e07e62e4f9e5e27ce156b7ae
   - enabled: 1
