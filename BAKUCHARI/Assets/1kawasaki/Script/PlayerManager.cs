@@ -57,7 +57,7 @@ public class PlayerManager : MonoBehaviour
 
     }
 
-    IEnumerator Clear()//三秒経つと次のステージに行く
+    IEnumerator Clear()//1.5秒経つと次のステージに行く
     {
         yield return new WaitForSeconds(1.5f);
         int currentScene = SceneManager.GetActiveScene().buildIndex;
