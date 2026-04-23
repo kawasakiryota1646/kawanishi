@@ -378,7 +378,7 @@ CircleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8b144534b266a054cb625f9c62967991, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2802,6 +2802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BikeMove
   rearWheel: {fileID: 206599634}
   motorSpeed: 10
+  rotateSpeed: 20
 --- !u!1 &1810465105
 GameObject:
   m_ObjectHideFlags: 0
