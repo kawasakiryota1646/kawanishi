@@ -57,6 +57,17 @@ public class PlayerManager : MonoBehaviour
 
     }
 
+    public IEnumerator TimeRestart()//Timeが0になったらリスポーン
+    {
+        yield return new WaitForSeconds(1.0f);
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
+
+        Debug.Log("リトライ");
+
+
+    }
+
     IEnumerator Clear()//1.5秒経つと次のステージに行く
     {
         yield return new WaitForSeconds(1.5f);
