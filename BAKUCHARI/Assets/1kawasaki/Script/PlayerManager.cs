@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class PlayerManager : MonoBehaviour
     bool IsGoal = false;
     Vector3 StartPos;
     private TimeCounter timeCounter;
+    public Text ClearText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,7 +36,7 @@ public class PlayerManager : MonoBehaviour
         if(!IsGoal && collision.gameObject.CompareTag("ground"))//ゴール後は死なない
         {
             Debug.Log("死んだ！");
-            transform.position = StartPos;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
@@ -74,6 +76,7 @@ public class PlayerManager : MonoBehaviour
 
     IEnumerator Clear()//1.5秒経つと次のステージに行く
     {
+        ClearText.text = "CLEAR！！";
         yield return new WaitForSeconds(1.5f);
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentScene + 1);
