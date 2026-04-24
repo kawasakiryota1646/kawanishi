@@ -6,6 +6,7 @@ public class TimeCounter : MonoBehaviour
 {
 
     private PlayerManager playermanager;
+    bool IsStop = false;
 
     //カウントダウン
     public float countdown = 5.0f;
@@ -15,11 +16,19 @@ public class TimeCounter : MonoBehaviour
     void Start()
     {
         playermanager = FindAnyObjectByType<PlayerManager>();
-    }  
-    
+    }
+    public void StopTime()//カウントダウンストップ用
+    {
+        IsStop = true;
+    }
+
+
     // Update is called once per frame
     void Update()
     {
+        if (IsStop) return;
+
+
         //時間をカウントダウンする
         countdown -= Time.deltaTime;
 
@@ -29,6 +38,8 @@ public class TimeCounter : MonoBehaviour
         //countdownが0以下になったときリスタート
         if (countdown <= 0)
         {
+            IsStop = true;
+
             timeText.text = "ゲームオーバー";
 
             StartCoroutine(playermanager.TimeRestart());
