@@ -10,12 +10,13 @@ public class PlayerManager : MonoBehaviour
     //変数
     bool IsGoal = false;
     Vector3 StartPos;
-
+    private TimeCounter timeCounter;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         StartPos = transform.position;//初期位置の保存
+        timeCounter = FindAnyObjectByType<TimeCounter>();
     }
 
     // Update is called once per frame
@@ -43,6 +44,9 @@ public class PlayerManager : MonoBehaviour
         if(collision.gameObject.CompareTag("goal")&&!IsGoal)
         {
             IsGoal = true;
+
+            timeCounter.StopTime();//クリアしたらカウントダウンを止める
+
             StartCoroutine(Clear());
             Debug.Log("ゴールに触れた！");
         }
