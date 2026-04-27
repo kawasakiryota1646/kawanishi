@@ -10,16 +10,9 @@ public class PlayerManager : MonoBehaviour
 {
     //変数
     bool IsGoal = false;
-    Vector3 StartPos;
     private TimeCounter timeCounter;
     public Text ClearText;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        StartPos = transform.position;//初期位置の保存
-        timeCounter = FindAnyObjectByType<TimeCounter>();
-    }
 
     // Update is called once per frame
     void Update()
@@ -29,31 +22,6 @@ public class PlayerManager : MonoBehaviour
             Retry();
         }
     }
-
-    //地面に当たったら死亡
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(!IsGoal && collision.gameObject.CompareTag("ground"))//ゴール後は死なない
-        {
-            Debug.Log("死んだ！");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-    }
-
-    //ゴールに触れたとき
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.gameObject.CompareTag("goal")&&!IsGoal)
-        {
-            IsGoal = true;
-
-            timeCounter.StopTime();//クリアしたらカウントダウンを止める
-
-            StartCoroutine(Clear());
-            Debug.Log("ゴールに触れた！");
-        }
-    }
-
 
     private void Retry()//Rキーを押されたときにやり直す
     {
@@ -74,6 +42,20 @@ public class PlayerManager : MonoBehaviour
 
     }
 
+    //ゴールに触れたとき
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("goal") && !IsGoal)
+        {
+            IsGoal = true;
+
+            timeCounter.StopTime();//クリアしたらカウントダウンを止める
+
+            StartCoroutine(Clear());
+            Debug.Log("ゴールに触れた！");
+        }
+    }
+
     IEnumerator Clear()//1.5秒経つと次のステージに行く
     {
         ClearText.text = "CLEAR！！";
@@ -82,6 +64,5 @@ public class PlayerManager : MonoBehaviour
         SceneManager.LoadScene(currentScene + 1);
         Debug.Log("Clear!");
     }
-
 
 }

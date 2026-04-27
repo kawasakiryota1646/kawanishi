@@ -12,7 +12,8 @@ public class TimeCounter : MonoBehaviour
     public float countdown = 5.0f;
 
     //時間を表示する変数
-    public Text timeText;
+    public Text TimeText;
+    public Text GameOver;
     void Start()
     {
         playermanager = FindAnyObjectByType<PlayerManager>();
@@ -33,14 +34,14 @@ public class TimeCounter : MonoBehaviour
         countdown -= Time.deltaTime;
 
         //時間を表示する
-        timeText.text = countdown.ToString("f1") + "秒";
+        TimeText.text = countdown.ToString("f1") + "秒";
 
         //countdownが0以下になったときリスタート
         if (countdown <= 0)
         {
             IsStop = true;
 
-            timeText.text = "ゲームオーバー";
+            GameOver.text = "ゲームオーバー";
 
             StartCoroutine(playermanager.TimeRestart());
 
