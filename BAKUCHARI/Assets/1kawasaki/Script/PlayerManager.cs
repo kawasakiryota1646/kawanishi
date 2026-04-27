@@ -8,12 +8,13 @@ using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
 {
+    [SerializeField] private TimeCounter timeCounter;
     //変数
     bool IsGoal = false;
-    private TimeCounter timeCounter;
     public Text ClearText;
-
-
+    void Start()
+    {
+    }
     // Update is called once per frame
     void Update()
     {
@@ -49,7 +50,7 @@ public class PlayerManager : MonoBehaviour
         {
             IsGoal = true;
 
-            timeCounter.StopTime();//クリアしたらカウントダウンを止める
+            timeCounter.StopTime();
 
             StartCoroutine(Clear());
             Debug.Log("ゴールに触れた！");
