@@ -296,11 +296,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 84502700533920360, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 96.62
+      value: 96
       objectReference: {fileID: 0}
     - target: {fileID: 84502700533920360, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 38.54
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 84502700533920360, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -5558,7 +5558,7 @@ Transform:
   m_GameObject: {fileID: 2034915310}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.31, y: 5.53, z: 0}
+  m_LocalPosition: {x: -12.1, y: 5.53, z: 0}
   m_LocalScale: {x: 1.3801, y: 1.3801, z: 1.3801}
   m_ConstrainProportionsScale: 0
   m_Children: []
