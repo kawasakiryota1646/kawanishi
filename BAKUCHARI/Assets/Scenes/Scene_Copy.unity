@@ -283,6 +283,7 @@ GameObject:
   - component: {fileID: 53133874}
   - component: {fileID: 53133876}
   - component: {fileID: 53133875}
+  - component: {fileID: 53133879}
   m_Layer: 0
   m_Name: rear_wheel
   m_TagString: Untagged
@@ -454,6 +455,20 @@ Transform:
   - {fileID: 1465173497}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &53133879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53133873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef10b346bce4df9438c1477d018cacf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Judgment
+  deathTag: Deathground
+  GameOver: {fileID: 1721557809}
 --- !u!1001 &60753224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1839,7 +1854,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeCounter
   countdown: 30
-  timeText: {fileID: 246865649}
+  TimeText: {fileID: 246865649}
+  GameOver: {fileID: 1721557809}
 --- !u!4 &955762455
 Transform:
   m_ObjectHideFlags: 0
@@ -1868,6 +1884,7 @@ GameObject:
   - component: {fileID: 988117922}
   - component: {fileID: 988117921}
   - component: {fileID: 988117920}
+  - component: {fileID: 988117925}
   m_Layer: 0
   m_Name: front_wheel
   m_TagString: Untagged
@@ -2039,6 +2056,20 @@ Transform:
   - {fileID: 2006317532}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &988117925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988117919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef10b346bce4df9438c1477d018cacf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Judgment
+  deathTag: Deathground
+  GameOver: {fileID: 1721557809}
 --- !u!1 &1059098791
 GameObject:
   m_ObjectHideFlags: 0
@@ -2676,11 +2707,37 @@ PrefabInstance:
       propertyPath: ClearText
       value: 
       objectReference: {fileID: 1307372881}
+    - target: {fileID: 8774388178255881550, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
+      propertyPath: timeCounter
+      value: 
+      objectReference: {fileID: 955762454}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3106201588614236645, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1552139980}
   m_SourcePrefab: {fileID: 100100000, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
+--- !u!1 &1552139979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3106201588614236645, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
+  m_PrefabInstance: {fileID: 1552139978}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1552139980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552139979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef10b346bce4df9438c1477d018cacf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Judgment
+  deathTag: ground
+  GameOver: {fileID: 1721557809}
 --- !u!1001 &1703199662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2817,6 +2874,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6286442896307026622, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 916593559}
+    - targetCorrespondingSourceObject: {fileID: 6286442896307026622, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1721557808}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
 --- !u!224 &1703199663 stripped
@@ -2881,6 +2941,85 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aab936bcd274faa478916977c3f9915a, type: 3}
+--- !u!1 &1721557807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1721557808}
+  - component: {fileID: 1721557810}
+  - component: {fileID: 1721557809}
+  m_Layer: 5
+  m_Name: GameOver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1721557808
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721557807}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.0001147, y: 2.0001147, z: 2.0001147}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1703199663}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 119.99999}
+  m_SizeDelta: {x: 500, y: 180}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1721557809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721557807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 60
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 60
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1721557810
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721557807}
+  m_CullTransparentMesh: 1
 --- !u!1 &1874635896
 GameObject:
   m_ObjectHideFlags: 0
