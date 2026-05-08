@@ -8,9 +8,9 @@ using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
 {
+    public bool IsGoal = false;
     [SerializeField] private TimeCounter timeCounter;
     //•Ï”
-    bool IsGoal = false;
     public Text ClearText;
     void Start()
     {
