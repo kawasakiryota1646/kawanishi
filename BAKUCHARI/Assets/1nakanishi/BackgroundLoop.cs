@@ -14,13 +14,19 @@ public class BackgroundLoop : MonoBehaviour
 
     void Update()
     {
-        // 少しずつ左へ動く
+        // 背景を左に流す
         transform.position += Vector3.left * moveSpeed * Time.deltaTime;
 
-        // カメラより左へ消えたら右へ移動
+        // 左に消えたら右へ
         if (transform.position.x < cameraTransform.position.x - width)
         {
             transform.position += new Vector3(width * 2f, 0, 0);
+        }
+
+        // 右に消えたら左へ
+        if (transform.position.x > cameraTransform.position.x + width)
+        {
+            transform.position -= new Vector3(width * 2f, 0, 0);
         }
     }
 }
