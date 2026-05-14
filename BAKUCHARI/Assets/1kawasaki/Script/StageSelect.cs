@@ -4,18 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class StageSelect : MonoBehaviour
 {
-    public void OnStage1Button()
-    {
-        SceneManager.LoadScene("stage1");
-    }
+    [SerializeField] private string _loadScene; //シーン名を記述
 
-    public void OnStage2Button()
+    public void LoadStage(string stageName)
     {
-        SceneManager.LoadScene("stage2");
+        SceneManager.LoadScene(stageName);
     }
-    public void OnTitleButton()
-    {
-        SceneManager.LoadScene("title");
-    }
-
 }

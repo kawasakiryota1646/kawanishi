@@ -417,12 +417,24 @@ PrefabInstance:
       value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 304922427557112955, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 304922427557112955, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1241563263}
+      objectReference: {fileID: 1959189500}
     - target: {fileID: 304922427557112955, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SelectBack
+      value: LoadStage
+      objectReference: {fileID: 0}
+    - target: {fileID: 304922427557112955, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: StageSelect, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 304922427557112955, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: StageSelect
       objectReference: {fileID: 0}
     - target: {fileID: 3756232538522629248, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
       propertyPath: m_Text
@@ -3432,17 +3444,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 219273631}
   m_SourcePrefab: {fileID: 100100000, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
---- !u!114 &1241563263 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8132263290861750081, guid: 0aa445f9880f40141854e99f9142598e, type: 3}
-  m_PrefabInstance: {fileID: 1711927784}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e023e053ca8ecc344b2beb24f1ef9ecc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StageUI
 --- !u!1 &1285474610
 GameObject:
   m_ObjectHideFlags: 0
@@ -5435,6 +5436,51 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1959189499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1959189501}
+  - component: {fileID: 1959189500}
+  m_Layer: 0
+  m_Name: Back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1959189500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959189499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed1dadfe900cc44f88f002290c981fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StageSelect
+  _loadScene: 
+--- !u!4 &1959189501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959189499}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.01601, y: -0.01338, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2026834291
 GameObject:
   m_ObjectHideFlags: 0
@@ -5667,3 +5713,4 @@ SceneRoots:
   - {fileID: 1759265815}
   - {fileID: 266549705}
   - {fileID: 2055058855}
+  - {fileID: 1959189501}
