@@ -521,7 +521,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8132263290861750081, guid: 0aa445f9880f40141854e99f9142598e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -538,7 +539,7 @@ GameObject:
   - component: {fileID: 209960071}
   - component: {fileID: 209960070}
   m_Layer: 0
-  m_Name: Circle (7)
+  m_Name: Circle
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -824,7 +825,7 @@ GameObject:
   - component: {fileID: 297692849}
   - component: {fileID: 297692848}
   m_Layer: 0
-  m_Name: Layer_3 (1)
+  m_Name: Layer_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1206,7 +1207,7 @@ GameObject:
   - component: {fileID: 442180710}
   - component: {fileID: 442180709}
   m_Layer: 0
-  m_Name: Circle (10)
+  m_Name: Circle
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1365,7 +1366,7 @@ GameObject:
   - component: {fileID: 449124951}
   - component: {fileID: 449124950}
   m_Layer: 0
-  m_Name: Layer_1 (1)
+  m_Name: Layer_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2463,7 +2464,7 @@ GameObject:
   - component: {fileID: 611384994}
   - component: {fileID: 611384993}
   m_Layer: 0
-  m_Name: Layer_2 (1)
+  m_Name: Layer_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2774,7 +2775,7 @@ GameObject:
   - component: {fileID: 735313939}
   - component: {fileID: 735313938}
   m_Layer: 0
-  m_Name: Circle (5)
+  m_Name: Circle
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2933,7 +2934,7 @@ GameObject:
   - component: {fileID: 875621760}
   - component: {fileID: 875621759}
   m_Layer: 0
-  m_Name: Circle (6)
+  m_Name: Circle
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3321,7 +3322,7 @@ GameObject:
   - component: {fileID: 987645163}
   - component: {fileID: 987645162}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: Square
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3684,12 +3685,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052786885}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.01601, y: -0.01338, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 51.00506, y: -0.33851403, z: -2277}
+  m_LocalScale: {x: 25.300001, y: 25.300001, z: 25.300001}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1703199663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1069581583
 GameObject:
@@ -3703,7 +3704,7 @@ GameObject:
   - component: {fileID: 1069581586}
   - component: {fileID: 1069581585}
   m_Layer: 0
-  m_Name: Square (2)
+  m_Name: Square
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3932,7 +3933,7 @@ GameObject:
   - component: {fileID: 1097783710}
   - component: {fileID: 1097783709}
   m_Layer: 0
-  m_Name: Circle (2)
+  m_Name: Circle
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4091,7 +4092,7 @@ GameObject:
   - component: {fileID: 1118767870}
   - component: {fileID: 1118767869}
   m_Layer: 0
-  m_Name: Circle (9)
+  m_Name: Circle
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4341,7 +4342,7 @@ GameObject:
   - component: {fileID: 1253147945}
   - component: {fileID: 1253147944}
   m_Layer: 0
-  m_Name: Circle (1)
+  m_Name: Circle
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4689,7 +4690,7 @@ GameObject:
   - component: {fileID: 1397726482}
   - component: {fileID: 1397726481}
   m_Layer: 0
-  m_Name: ground_0 (2)
+  m_Name: ground_0
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5227,7 +5228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3106201588614236645, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: m_Name
-      value: Circle (1)
+      value: Circle
       objectReference: {fileID: 0}
     - target: {fileID: 5757402859903130461, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: m_Sprite
@@ -5322,7 +5323,7 @@ GameObject:
   - component: {fileID: 1676701384}
   - component: {fileID: 1676701383}
   m_Layer: 0
-  m_Name: Circle (4)
+  m_Name: Circle
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5635,6 +5636,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6286442896307026622, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1405418584}
+    - targetCorrespondingSourceObject: {fileID: 6286442896307026622, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1052786887}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
 --- !u!224 &1703199663 stripped
@@ -5727,7 +5731,7 @@ GameObject:
   - component: {fileID: 1747325269}
   - component: {fileID: 1747325268}
   m_Layer: 0
-  m_Name: ground_0 (1)
+  m_Name: ground_0
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6316,7 +6320,7 @@ GameObject:
   - component: {fileID: 1913031078}
   - component: {fileID: 1913031077}
   m_Layer: 0
-  m_Name: Circle (3)
+  m_Name: Circle
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6475,7 +6479,7 @@ GameObject:
   - component: {fileID: 1977125036}
   - component: {fileID: 1977125035}
   m_Layer: 0
-  m_Name: Circle (11)
+  m_Name: Circle
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6831,7 +6835,7 @@ GameObject:
   - component: {fileID: 2046564191}
   - component: {fileID: 2046564190}
   m_Layer: 0
-  m_Name: Circle (8)
+  m_Name: Circle
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6994,4 +6998,3 @@ SceneRoots:
   - {fileID: 1769779280}
   - {fileID: 1891050447}
   - {fileID: 1868218487}
-  - {fileID: 1052786887}

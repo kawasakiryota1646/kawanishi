@@ -680,7 +680,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8132263290861750081, guid: 0aa445f9880f40141854e99f9142598e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -697,7 +698,7 @@ GameObject:
   - component: {fileID: 197415534}
   - component: {fileID: 197415533}
   m_Layer: 0
-  m_Name: Triangle (4)
+  m_Name: Triangle
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -839,7 +840,7 @@ GameObject:
   - component: {fileID: 219614384}
   - component: {fileID: 219614383}
   m_Layer: 0
-  m_Name: Triangle (1)
+  m_Name: Triangle
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1127,12 +1128,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283516361}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.01601, y: -0.01338, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 51.00506, y: -0.33851403, z: -2277}
+  m_LocalScale: {x: 25.300001, y: 25.300001, z: 25.300001}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1703199663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &297692846
 GameObject:
@@ -1146,7 +1147,7 @@ GameObject:
   - component: {fileID: 297692849}
   - component: {fileID: 297692848}
   m_Layer: 0
-  m_Name: Layer_3 (1)
+  m_Name: Layer_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1528,7 +1529,7 @@ GameObject:
   - component: {fileID: 449124951}
   - component: {fileID: 449124950}
   m_Layer: 0
-  m_Name: Layer_1 (1)
+  m_Name: Layer_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2626,7 +2627,7 @@ GameObject:
   - component: {fileID: 611384994}
   - component: {fileID: 611384993}
   m_Layer: 0
-  m_Name: Layer_2 (1)
+  m_Name: Layer_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3304,7 +3305,7 @@ GameObject:
   - component: {fileID: 987645163}
   - component: {fileID: 987645162}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: Square
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4416,7 +4417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3106201588614236645, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: m_Name
-      value: Circle (1)
+      value: Circle
       objectReference: {fileID: 0}
     - target: {fileID: 5757402859903130461, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: m_Sprite
@@ -4665,6 +4666,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6286442896307026622, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1376582356}
+    - targetCorrespondingSourceObject: {fileID: 6286442896307026622, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 283516363}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
 --- !u!224 &1703199663 stripped
@@ -5251,7 +5255,7 @@ GameObject:
   - component: {fileID: 2041493651}
   - component: {fileID: 2041493650}
   m_Layer: 0
-  m_Name: Triangle (2)
+  m_Name: Triangle
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5484,7 +5488,7 @@ GameObject:
   - component: {fileID: 2115603208}
   - component: {fileID: 2115603210}
   m_Layer: 0
-  m_Name: ground_0 (1)
+  m_Name: ground_0
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5625,4 +5629,3 @@ SceneRoots:
   - {fileID: 282334562}
   - {fileID: 1769779280}
   - {fileID: 1991809446}
-  - {fileID: 283516363}
