@@ -5,12 +5,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using TMPro;
 
 public class Judgment : MonoBehaviour
 {
     public string deathTag = "ground"; // ← Unity側で変更できる
     bool IsGoal = false;
-    public Text GameOver;
+    public TMP_Text GameOver;
     private PlayerManager playerManager;
 
     void Start()
@@ -35,7 +36,7 @@ public class Judgment : MonoBehaviour
 
         if (!IsGoal && collision.gameObject.CompareTag(deathTag))
         {
-            GameOver.text = "ゲームオーバー";
+            GameOver.text = "GameOver";
             Debug.Log("死んだ！");
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }

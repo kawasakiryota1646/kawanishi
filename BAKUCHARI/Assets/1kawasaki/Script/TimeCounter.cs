@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+
 public class TimeCounter : MonoBehaviour
 {
 
@@ -13,7 +15,7 @@ public class TimeCounter : MonoBehaviour
 
     //時間を表示する変数
     public Text TimeText;
-    public Text GameOver;
+    public TMP_Text GameOver;
     void Start()
     {
         playermanager = FindAnyObjectByType<PlayerManager>();
@@ -41,7 +43,7 @@ public class TimeCounter : MonoBehaviour
         {
             IsStop = true;
 
-            GameOver.text = "ゲームオーバー";
+            GameOver.text = "GameOver";
 
             StartCoroutine(playermanager.TimeRestart());
 
