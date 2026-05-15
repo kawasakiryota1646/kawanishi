@@ -4908,7 +4908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Judgment
   deathTag: ground
-  GameOver: {fileID: 0}
+  GameOver: {fileID: 1196778554}
 --- !u!1 &1307372879
 GameObject:
   m_ObjectHideFlags: 0
