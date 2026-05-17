@@ -36,7 +36,7 @@ public class TimeCounter : MonoBehaviour
         countdown -= Time.deltaTime;
 
         //時間を表示する
-        TimeText.text = countdown.ToString("f1") + "秒";
+        TimeText.text = countdown.ToString("f1");
 
         //countdownが0以下になったときリスタート
         if (countdown <= 0)
