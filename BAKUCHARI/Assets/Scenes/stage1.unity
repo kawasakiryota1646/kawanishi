@@ -543,7 +543,7 @@ PrefabInstance:
     - target: {fileID: 7969601173380016195, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 5000927251509650613, guid: 4d28ef82e72d37b409da72f013ed67d0, type: 3}
+      objectReference: {fileID: 9134896734179593037, guid: e2d187503ccae5e4cad53424b294fd16, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -984,7 +984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TimeCounter
   countdown: 30
   TimeText: {fileID: 1285474612}
-  GameOver: {fileID: 291263810}
+  GameOver: {fileID: 0}
 --- !u!4 &294179167
 Transform:
   m_ObjectHideFlags: 0
@@ -3430,8 +3430,8 @@ Transform:
   m_GameObject: {fileID: 1127067456}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.464302, y: 19.366598, z: -2209.5}
-  m_LocalScale: {x: 24.550001, y: 24.550001, z: 24.550001}
+  m_LocalPosition: {x: 30.464302, y: 29.98, z: -2209.5}
+  m_LocalScale: {x: 24.550001, y: 25.532, z: 24.550001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1159351045}
