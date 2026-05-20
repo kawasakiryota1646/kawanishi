@@ -5542,6 +5542,8 @@ MonoBehaviour:
   motorSpeed: 10
   rotateSpeed: 20
   dashPower: 50
+  dashPadPower: 100
+  dashPadTime: 2
   maxStamina: 30
   stamina: 0
   staminaUseRate: 10

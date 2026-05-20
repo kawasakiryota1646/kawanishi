@@ -1954,6 +1954,8 @@ MonoBehaviour:
   motorSpeed: 10
   rotateSpeed: 20
   dashPower: 50
+  dashPadPower: 100
+  dashPadTime: 2
   maxStamina: 30
   stamina: 0
   staminaUseRate: 10
@@ -5793,7 +5795,7 @@ PrefabInstance:
       objectReference: {fileID: 1192672}
     - target: {fileID: 7024408271524838799, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
       propertyPath: m_SortingOrder
-      value: 6
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7438306058082112926, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
       propertyPath: m_Name
