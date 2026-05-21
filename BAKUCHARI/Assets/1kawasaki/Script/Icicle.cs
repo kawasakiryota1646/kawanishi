@@ -1,30 +1,47 @@
+using System.Collections;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Icicle : MonoBehaviour
 {
-    [SerializeField] Rigidbody2D rb;
-    [SerializeField] float fallDelay = 0.5f;
+    Rigidbody2D rb;
 
-    bool activated = false;
+    [SerializeField]
+    float fallGravity = 3f;
 
+    bool hasFallen = false;
+
+    [SerializeField]
+    float delay = 1f;
     void Start()
     {
-        rb.simulated = false;
+        rb = GetComponent<Rigidbody2D>();
+        rb.gravityScale = 0f;
+
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    public void Fall()
     {
-        if (activated) return;
+        if (hasFallen) return;
 
-        if (other.CompareTag("Player"))
+        hasFallen = true;
+        rb.gravityScale = fallGravity;
+        StartCoroutine(FallDelay());
+
+    }
+
+    IEnumerator FallDelay()
+    {
+        yield return new WaitForSeconds(delay);
+
+        rb.gravityScale = 3;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("ground"))
         {
-            activated = true;
-            Invoke(nameof(Drop), fallDelay);
-        }
-    }
+            StartCoroutine(FallDelay());
 
-    void Drop()
-    {
-        rb.simulated = true;
+            Destroy(gameObject);
+        }
     }
 }
