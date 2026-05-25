@@ -7878,8 +7878,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a4c56dc1f8c1e488a970feb1c0ad5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovingPlatform
-  speed: 2
-  range: 3
+  speed: 1
+  range: 2
   moveUpDown: 1
 --- !u!61 &1914376582
 BoxCollider2D:
