@@ -1054,6 +1054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundLoop
   cameraTransform: {fileID: 65235517}
+  playerRb: {fileID: 1452112299}
   moveSpeed: 0.5
 --- !u!212 &302524905
 SpriteRenderer:
@@ -2288,6 +2289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundLoop
   cameraTransform: {fileID: 65235517}
+  playerRb: {fileID: 1452112299}
   moveSpeed: 1.5
 --- !u!212 &658893082
 SpriteRenderer:
@@ -2889,6 +2891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundLoop
   cameraTransform: {fileID: 65235517}
+  playerRb: {fileID: 1452112299}
   moveSpeed: 0.2
 --- !u!212 &716774604
 SpriteRenderer:
@@ -4476,6 +4479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundLoop
   cameraTransform: {fileID: 65235517}
+  playerRb: {fileID: 1452112299}
   moveSpeed: 0.5
 --- !u!212 &1174384323
 SpriteRenderer:
@@ -4582,6 +4586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundLoop
   cameraTransform: {fileID: 65235517}
+  playerRb: {fileID: 1452112299}
   moveSpeed: 0.2
 --- !u!212 &1181403021
 SpriteRenderer:
@@ -5235,6 +5240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundLoop
   cameraTransform: {fileID: 65235517}
+  playerRb: {fileID: 1452112299}
   moveSpeed: 1
 --- !u!4 &1420490644
 Transform:
@@ -8220,6 +8226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundLoop
   cameraTransform: {fileID: 65235517}
+  playerRb: {fileID: 1452112299}
   moveSpeed: 1.5
 --- !u!212 &2102989864
 SpriteRenderer:

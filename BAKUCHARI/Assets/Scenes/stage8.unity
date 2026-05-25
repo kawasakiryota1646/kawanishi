@@ -701,6 +701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundLoop
   cameraTransform: {fileID: 1192673}
+  playerRb: {fileID: 557774517}
   moveSpeed: 1.5
 --- !u!212 &297692849
 SpriteRenderer:
@@ -1115,6 +1116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundLoop
   cameraTransform: {fileID: 1192673}
+  playerRb: {fileID: 557774517}
   moveSpeed: 0.5
 --- !u!212 &381105679
 SpriteRenderer:
@@ -1221,6 +1223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundLoop
   cameraTransform: {fileID: 1192673}
+  playerRb: {fileID: 557774517}
   moveSpeed: 0.2
 --- !u!212 &449124951
 SpriteRenderer:
@@ -2463,6 +2466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundLoop
   cameraTransform: {fileID: 1192673}
+  playerRb: {fileID: 557774517}
   moveSpeed: 0.5
 --- !u!212 &611384994
 SpriteRenderer:
@@ -3119,6 +3123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundLoop
   cameraTransform: {fileID: 1192673}
+  playerRb: {fileID: 557774517}
   moveSpeed: 1.5
 --- !u!212 &926313051
 SpriteRenderer:
@@ -3714,7 +3719,7 @@ GameObject:
   - component: {fileID: 1287964328}
   m_Layer: 0
   m_Name: circle_0
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5947,6 +5952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundLoop
   cameraTransform: {fileID: 1192673}
+  playerRb: {fileID: 557774517}
   moveSpeed: 1
 --- !u!4 &1769779280
 Transform:
@@ -6324,6 +6330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundLoop
   cameraTransform: {fileID: 1192673}
+  playerRb: {fileID: 557774517}
   moveSpeed: 0.2
 --- !u!212 &2020396223
 SpriteRenderer:
