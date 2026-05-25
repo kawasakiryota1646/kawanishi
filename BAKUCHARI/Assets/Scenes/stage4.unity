@@ -3118,7 +3118,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 333, y: 222}
+  m_AnchoredPosition: {x: 290, y: 190}
   m_SizeDelta: {x: 200, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &916593560
@@ -5687,11 +5687,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 84502700533920360, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -380
+      value: -337
       objectReference: {fileID: 0}
     - target: {fileID: 84502700533920360, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 220
+      value: 190
       objectReference: {fileID: 0}
     - target: {fileID: 304922427557112955, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -5712,6 +5712,10 @@ PrefabInstance:
     - target: {fileID: 304922427557112955, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: StageSelect
+      objectReference: {fileID: 0}
+    - target: {fileID: 2160626495047164626, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3756232538522629248, guid: 2782edfffabb33f43b951d1281bc7f4e, type: 3}
       propertyPath: m_Text
