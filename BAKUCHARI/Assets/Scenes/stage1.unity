@@ -990,7 +990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TimeCounter
   countdown: 30
   TimeText: {fileID: 1285474612}
-  GameOver: {fileID: 0}
+  GameOver: {fileID: 251824366}
 --- !u!4 &294179167
 Transform:
   m_ObjectHideFlags: 0
