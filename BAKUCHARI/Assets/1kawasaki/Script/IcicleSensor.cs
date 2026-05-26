@@ -9,7 +9,7 @@ public class IcicleSensor : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("aaaaaaa");
+            Debug.Log("‚Â‚ç‚ç‚­‚é‚æ");
             icicle.Fall();
         }
     }
