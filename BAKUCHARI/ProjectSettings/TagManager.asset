@@ -8,6 +8,7 @@ TagManager:
   - goal
   - Deathground
   - DashPad
+  - bounce
   layers:
   - Default
   - TransparentFX
