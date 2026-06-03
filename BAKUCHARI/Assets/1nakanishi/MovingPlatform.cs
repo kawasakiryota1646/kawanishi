@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
 {
-    public float speed = 2f;   // “®‚­‘¬‚³
-    public float range = 3f;   // “®‚­‹——£
+    public float speed = 2f;
+    public float range = 3f;
 
-    public bool moveUpDown;    // true‚È‚çã‰ºAfalse‚È‚ç¶‰E
+    public bool moveUpDown;
 
     Vector3 startPos;
+    float timer;
 
     void Start()
     {
@@ -16,16 +17,16 @@ public class MovingPlatform : MonoBehaviour
 
     void Update()
     {
-        float move = Mathf.Sin(Time.time * speed) * range;
+        timer += Time.deltaTime;
+
+        float move = Mathf.Sin(timer * speed) * range;
 
         if (moveUpDown)
         {
-            // ã‰ºˆÚ“®
             transform.position = startPos + new Vector3(0, move, 0);
         }
         else
         {
-            // ¶‰EˆÚ“®
             transform.position = startPos + new Vector3(move, 0, 0);
         }
     }
