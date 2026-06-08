@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7907724766604336399}
   - component: {fileID: 5757402859903130461}
-  - component: {fileID: 2839913087352991471}
   - component: {fileID: 8073262327445488383}
   - component: {fileID: 8774388178255881550}
   m_Layer: 0
@@ -94,42 +93,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!58 &2839913087352991471
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3106201588614236645}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
 --- !u!50 &8073262327445488383
 Rigidbody2D:
   serializedVersion: 5
@@ -169,3 +132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 164c288a3aa3ab6449f9d4c04d09a923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerManager
+  IsGoal: 0
+  timeCounter: {fileID: 0}
+  ClearText: {fileID: 0}
