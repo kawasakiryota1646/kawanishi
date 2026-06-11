@@ -52,6 +52,12 @@ public class PlayerManager : MonoBehaviour
 
             timeCounter.StopTime();
 
+            // c‚èŠÔ‚ğ•Û‘¶
+            RecordManager.SaveTime(
+                SceneManager.GetActiveScene().buildIndex,
+                timeCounter.countdown
+            );
+
             StartCoroutine(Clear());
             Debug.Log("ƒS[ƒ‹‚ÉG‚ê‚½I");
         }
