@@ -1192,8 +1192,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.00080013275, y: -0.0011000633, z: 0}
-    m_Extent: {x: 5.499, y: 5.4989, z: 0}
+    m_Center: {x: 0.00024986267, y: 0.0000500679, z: 0}
+    m_Extent: {x: 11.46885, y: 11.469351, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1201,7 +1201,7 @@ MonoBehaviour:
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 5
+  m_ShapeLightFalloffSize: 10.97
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
   - {x: 0.5, y: 0, z: 0}
@@ -2495,28 +2495,32 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5757402859903130461, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4815476061570213978, guid: 00eab581db3636d4b95460e7e0123634, type: 3}
+    - target: {fileID: 5757402859903130461, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: m_SortingOrder
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7907724766604336399, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.84972066
+      value: 0.33525535
       objectReference: {fileID: 0}
     - target: {fileID: 7907724766604336399, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.84972066
+      value: 0.33525535
       objectReference: {fileID: 0}
     - target: {fileID: 7907724766604336399, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.84972066
+      value: 0.33525535
       objectReference: {fileID: 0}
     - target: {fileID: 7907724766604336399, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -182.98099
+      value: -183
       objectReference: {fileID: 0}
     - target: {fileID: 7907724766604336399, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 24.289999
+      value: 24.372
       objectReference: {fileID: 0}
     - target: {fileID: 7907724766604336399, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6519,8 +6523,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0000076293945, y: 0.00000071525574}
-  m_Radius: 0.5
+  m_Offset: {x: -0.013648875, y: -0.20800903}
+  m_Radius: 1.6139778
 --- !u!1 &1820447997
 GameObject:
   m_ObjectHideFlags: 0
