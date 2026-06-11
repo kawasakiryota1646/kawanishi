@@ -1,6 +1,5 @@
 using UnityEngine;
-
-public static class RecordManager
+public class RecordManager : MonoBehaviour
 {
     public static void SaveTime(int stageNo, float time)
     {
