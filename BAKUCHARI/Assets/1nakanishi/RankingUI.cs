@@ -20,9 +20,9 @@ public class RankingUI : MonoBehaviour
             float time = RecordManager.GetBestTime(i);
 
             if (time < 0)
-                stageTexts[i - 1].text = $"STAGE {i} : ---";
+                stageTexts[i - 1].text = $"STAGE{i} : ---";
             else
-                stageTexts[i - 1].text = $"STAGE {i} : {time:F1}•b";
+                stageTexts[i - 1].text = $"STAGE{i} : {time:F1}";
         }
     }
 
