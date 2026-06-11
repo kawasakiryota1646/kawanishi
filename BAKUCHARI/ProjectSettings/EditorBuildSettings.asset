@@ -8,18 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 0
-    path: Assets/1kawasaki/Scene/myscene.unity
-    guid: 12346976e07e62e4f9e5e27ce156b7ae
   - enabled: 1
     path: Assets/Scenes/title.unity
     guid: d8cdc93884a4dda459ebc7c9fd1cde25
-  - enabled: 1
-    path: Assets/Scenes/StageSelect.unity
-    guid: 5702d856e2a6d5247b1f760c021b2fe3
-  - enabled: 1
-    path: Assets/Scenes/description.unity
-    guid: 0170a15557876c048bc0c2c29f4cd767
   - enabled: 1
     path: Assets/Scenes/stage1.unity
     guid: 3b59aa0e5cb4ffe439d494279d9994d2
@@ -50,5 +41,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/stage10.unity
     guid: 836f79109725a8a489ff449da2c2a8fb
+  - enabled: 1
+    path: Assets/Scenes/StageSelect.unity
+    guid: 5702d856e2a6d5247b1f760c021b2fe3
+  - enabled: 1
+    path: Assets/Scenes/ranking.unity
+    guid: dfbf31feeb8468f43a6d6d2b469a07c5
+  - enabled: 1
+    path: Assets/Scenes/description.unity
+    guid: 0170a15557876c048bc0c2c29f4cd767
+  - enabled: 0
+    path: Assets/1kawasaki/Scene/myscene.unity
+    guid: 12346976e07e62e4f9e5e27ce156b7ae
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
