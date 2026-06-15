@@ -11,6 +11,8 @@ public class Judgment : MonoBehaviour
 {
     public string deathTag = "ground";
     bool IsGoal = false;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip overSE;
 
     public TMP_Text GameOver;
 
@@ -40,6 +42,7 @@ public class Judgment : MonoBehaviour
         if (!IsGoal && collision.gameObject.CompareTag(deathTag))
         {
             isDead = true;
+            audioSource.PlayOneShot(overSE);
 
             GameOver.text = "GameOver";
             Debug.Log("éÄÇÒÇæÅI");
@@ -52,7 +55,7 @@ public class Judgment : MonoBehaviour
     IEnumerator GameOverDelay()
     {
         // 2ïbë“ã@
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(2.0f);
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

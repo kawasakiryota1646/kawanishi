@@ -12,6 +12,10 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private TimeCounter timeCounter;
     //変数
     public Text ClearText;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip goalSE;
+    [SerializeField] private AudioClip overSE;
+
     void Start()
     {
     }
@@ -34,7 +38,8 @@ public class PlayerManager : MonoBehaviour
 
     public IEnumerator TimeRestart()//Timeが0になったらリスポーン
     {
-        yield return new WaitForSeconds(1.0f);
+        audioSource.PlayOneShot(overSE);
+        yield return new WaitForSeconds(2.0f);
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
 
@@ -49,7 +54,7 @@ public class PlayerManager : MonoBehaviour
         if (collision.gameObject.CompareTag("goal") && !IsGoal)
         {
             IsGoal = true;
-
+            audioSource.PlayOneShot(goalSE);
             timeCounter.StopTime();
 
             // 残り時間を保存
