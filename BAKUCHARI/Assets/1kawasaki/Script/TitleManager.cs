@@ -8,12 +8,6 @@ public class TitleManager : MonoBehaviour
 
     [SerializeField] private string _loadScene; //シーン名を記述
 
-    //public void OnStartButton()
-    //{
-    //    SceneManager.LoadScene("StageSelect");
-    //    Destroy(GameObject.Find("BGMManager"));
-
-    //}
     public void LoadStage(string stageName)
     {
         SceneManager.LoadScene(stageName);
