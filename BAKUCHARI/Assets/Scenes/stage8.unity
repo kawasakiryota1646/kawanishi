@@ -469,8 +469,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Judgment
   deathTag: Deathground
-  audioSource: {fileID: 0}
-  overSE: {fileID: 0}
+  audioSource: {fileID: 557774521}
+  overSE: {fileID: 8300000, guid: 7da9f3707d931594098ad7242b4b949d, type: 3}
   GameOver: {fileID: 1531631253}
 --- !u!114 &53133880
 MonoBehaviour:
@@ -1568,8 +1568,7 @@ MonoBehaviour:
   overheatRecoverRate: 10
   staminaBar: {fileID: 1874635898}
   audioSource: {fileID: 557774521}
-  bellSE: {fileID: 0}
-  moveAudioSource: {fileID: 557774521}
+  bellSE: {fileID: 8300000, guid: 208384e9d98df194198d56fca700ab9a, type: 3}
   moveSE: {fileID: 8300000, guid: 20bcd82d85c74024db51c72f58cc49d8, type: 3}
   dashSE: {fileID: 8300000, guid: b8f6982512cbf5043ab85d3034ffb6fc, type: 3}
 --- !u!60 &557774516
@@ -2414,8 +2413,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Judgment
   deathTag: Deathground
-  audioSource: {fileID: 0}
-  overSE: {fileID: 0}
+  audioSource: {fileID: 557774521}
+  overSE: {fileID: 8300000, guid: 7da9f3707d931594098ad7242b4b949d, type: 3}
   GameOver: {fileID: 1531631253}
 --- !u!82 &557774521
 AudioSource:
@@ -3910,8 +3909,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Judgment
   deathTag: Deathground
-  audioSource: {fileID: 0}
-  overSE: {fileID: 0}
+  audioSource: {fileID: 557774521}
+  overSE: {fileID: 8300000, guid: 7da9f3707d931594098ad7242b4b949d, type: 3}
   GameOver: {fileID: 1531631253}
 --- !u!114 &988117926
 MonoBehaviour:
@@ -4272,8 +4271,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Judgment
   deathTag: ground
-  audioSource: {fileID: 0}
-  overSE: {fileID: 0}
+  audioSource: {fileID: 557774521}
+  overSE: {fileID: 8300000, guid: 7da9f3707d931594098ad7242b4b949d, type: 3}
   GameOver: {fileID: 1531631253}
 --- !u!1 &1287964324
 GameObject:
@@ -5716,9 +5715,21 @@ PrefabInstance:
       value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 8774388178255881550, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
+      propertyPath: goalSE
+      value: 
+      objectReference: {fileID: 8300000, guid: 3ada24ac23ffc304c826a3fd2934731c, type: 3}
+    - target: {fileID: 8774388178255881550, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
+      propertyPath: overSE
+      value: 
+      objectReference: {fileID: 8300000, guid: 7da9f3707d931594098ad7242b4b949d, type: 3}
+    - target: {fileID: 8774388178255881550, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: ClearText
       value: 
       objectReference: {fileID: 1307372881}
+    - target: {fileID: 8774388178255881550, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 557774521}
     - target: {fileID: 8774388178255881550, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: timeCounter
       value: 
@@ -6342,8 +6353,8 @@ Transform:
   m_GameObject: {fileID: 1747325266}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 250, y: -21.1, z: 0}
-  m_LocalScale: {x: 200, y: 30, z: 1}
+  m_LocalPosition: {x: 351.3149, y: -21.1, z: 0}
+  m_LocalScale: {x: 402.60123, y: 30, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 282334562}

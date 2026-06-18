@@ -18,10 +18,11 @@ public class Judgment : MonoBehaviour
 
     private PlayerManager playerManager;
 
-    private bool isDead = false;
-
+    private static bool isDead = false;
     void Start()
     {
+
+        isDead = false;
         playerManager = FindObjectOfType<PlayerManager>();
 
         if (playerManager == null)

@@ -39,7 +39,6 @@ public class BikeMove : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip bellSE;//ベルSE
 
-    [SerializeField] private AudioSource moveAudioSource;
 
     [SerializeField] private AudioClip moveSE;  // 通常走行
     [SerializeField] private AudioClip dashSE;  // ダッシュ
@@ -48,8 +47,8 @@ public class BikeMove : MonoBehaviour
         rb = GetComponent<Rigidbody2D>(); // 本体取得
 
         stamina = maxStamina; // スタミナを満タンにする
-        
-        moveAudioSource.loop = true;
+
+        audioSource.loop = true;
 
     }
     private void Update()
@@ -176,20 +175,20 @@ public class BikeMove : MonoBehaviour
 
             AudioClip targetClip = actuallyDashing ? dashSE : moveSE;
 
-            if (moveAudioSource.clip != targetClip)
+            if (audioSource.clip != targetClip)
             {
-                moveAudioSource.clip = targetClip;
+                audioSource.clip = targetClip;
             }
 
-            if (!moveAudioSource.isPlaying)
+            if (!audioSource.isPlaying)
             {
-                moveAudioSource.loop = true;
-                moveAudioSource.Play();
+                audioSource.loop = true;
+                audioSource.Play();
             }
         }
         else
         {
-            moveAudioSource.Stop();
+            audioSource.Stop();
         }
     }
 

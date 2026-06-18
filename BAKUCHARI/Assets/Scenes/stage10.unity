@@ -607,8 +607,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Judgment
   deathTag: Deathground
-  audioSource: {fileID: 0}
-  overSE: {fileID: 0}
+  audioSource: {fileID: 557774521}
+  overSE: {fileID: 8300000, guid: 7da9f3707d931594098ad7242b4b949d, type: 3}
   GameOver: {fileID: 1531631253}
 --- !u!114 &53133880
 MonoBehaviour:
@@ -1779,6 +1779,7 @@ GameObject:
   - component: {fileID: 557774516}
   - component: {fileID: 557774515}
   - component: {fileID: 557774520}
+  - component: {fileID: 557774521}
   m_Layer: 0
   m_Name: blue_body_0
   m_TagString: Player
@@ -1810,6 +1811,10 @@ MonoBehaviour:
   staminaRecoverRate: 5
   overheatRecoverRate: 10
   staminaBar: {fileID: 1874635898}
+  audioSource: {fileID: 557774521}
+  bellSE: {fileID: 8300000, guid: 208384e9d98df194198d56fca700ab9a, type: 3}
+  moveSE: {fileID: 8300000, guid: 20bcd82d85c74024db51c72f58cc49d8, type: 3}
+  dashSE: {fileID: 8300000, guid: b8f6982512cbf5043ab85d3034ffb6fc, type: 3}
 --- !u!60 &557774516
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2652,9 +2657,106 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Judgment
   deathTag: Deathground
-  audioSource: {fileID: 0}
-  overSE: {fileID: 0}
+  audioSource: {fileID: 557774521}
+  overSE: {fileID: 8300000, guid: 7da9f3707d931594098ad7242b4b949d, type: 3}
   GameOver: {fileID: 1531631253}
+--- !u!82 &557774521
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557774514}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &584633865
 GameObject:
   m_ObjectHideFlags: 0
@@ -2997,7 +3099,7 @@ Transform:
   m_GameObject: {fileID: 656163408}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.4, y: 0.56, z: 0}
+  m_LocalPosition: {x: -5.4, y: -0.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3853,8 +3955,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Judgment
   deathTag: Deathground
-  audioSource: {fileID: 0}
-  overSE: {fileID: 0}
+  audioSource: {fileID: 557774521}
+  overSE: {fileID: 8300000, guid: 7da9f3707d931594098ad7242b4b949d, type: 3}
   GameOver: {fileID: 1531631253}
 --- !u!114 &988117926
 MonoBehaviour:
@@ -4620,8 +4722,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Judgment
   deathTag: ground
-  audioSource: {fileID: 0}
-  overSE: {fileID: 0}
+  audioSource: {fileID: 557774521}
+  overSE: {fileID: 8300000, guid: 7da9f3707d931594098ad7242b4b949d, type: 3}
   GameOver: {fileID: 1531631253}
 --- !u!1 &1307372879
 GameObject:
@@ -5157,8 +5259,8 @@ Transform:
   m_GameObject: {fileID: 1449503086}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 160, y: -21, z: 0}
-  m_LocalScale: {x: 400, y: 30, z: 1}
+  m_LocalPosition: {x: 250.8119, y: -21, z: 0}
+  m_LocalScale: {x: 581.62683, y: 30, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 282334562}
@@ -5577,9 +5679,21 @@ PrefabInstance:
       value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 8774388178255881550, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
+      propertyPath: goalSE
+      value: 
+      objectReference: {fileID: 8300000, guid: 3ada24ac23ffc304c826a3fd2934731c, type: 3}
+    - target: {fileID: 8774388178255881550, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
+      propertyPath: overSE
+      value: 
+      objectReference: {fileID: 8300000, guid: 7da9f3707d931594098ad7242b4b949d, type: 3}
+    - target: {fileID: 8774388178255881550, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: ClearText
       value: 
       objectReference: {fileID: 1307372881}
+    - target: {fileID: 8774388178255881550, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 557774521}
     - target: {fileID: 8774388178255881550, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: timeCounter
       value: 

@@ -332,7 +332,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 36a264158ff512d47a64a20db9140ff6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1582,6 +1582,7 @@ MonoBehaviour:
   _loadScene: 
   audioSource: {fileID: 945354808}
   clickSE: {fileID: 8300000, guid: 8ddb72beb21aa7c4cabdc003890881fe, type: 3}
+  Length: 0.3
 --- !u!4 &945354807
 Transform:
   m_ObjectHideFlags: 0

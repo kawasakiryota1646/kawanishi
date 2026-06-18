@@ -1294,6 +1294,8 @@ MonoBehaviour:
   staminaBar: {fileID: 2026834293}
   audioSource: {fileID: 500206166}
   bellSE: {fileID: 8300000, guid: 208384e9d98df194198d56fca700ab9a, type: 3}
+  moveSE: {fileID: 8300000, guid: 20bcd82d85c74024db51c72f58cc49d8, type: 3}
+  dashSE: {fileID: 8300000, guid: b8f6982512cbf5043ab85d3034ffb6fc, type: 3}
 --- !u!60 &500206162
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4983,7 +4985,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 4bb4e1ad6a2e19d4bb9f1ca51398afe0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5107,7 +5109,7 @@ Transform:
   m_GameObject: {fileID: 1619085081}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.07799, y: -0.77165, z: 0}
+  m_LocalPosition: {x: -7.07799, y: -1.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
