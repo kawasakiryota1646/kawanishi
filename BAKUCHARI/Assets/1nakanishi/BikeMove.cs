@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.InputSystem;
 using UnityEngine.UI; // UI操作に必要
 
@@ -34,13 +35,24 @@ public class BikeMove : MonoBehaviour
 
     private Rigidbody2D rb; // 本体
 
+    // ===== Audio =====
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip bellSE;//ベルSE
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // 本体取得
 
         stamina = maxStamina; // スタミナを満タンにする
     }
+    private void Update()
+    {
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            BikeBell();
+        }
 
+    }
     void FixedUpdate()
     {
         float moveInput = 0f;   // 前後入力
@@ -144,6 +156,7 @@ public class BikeMove : MonoBehaviour
         {
             staminaBar.fillAmount = stamina / maxStamina;
         }
+
     }
 
     // ===== DashPad開始 =====
@@ -161,4 +174,11 @@ public class BikeMove : MonoBehaviour
             StartDashPad();
         }
     }
+    private void BikeBell()
+    {
+
+        Debug.Log("ベルを鳴らす");
+        audioSource.PlayOneShot(bellSE, 2.0f);
+    }
+
 }

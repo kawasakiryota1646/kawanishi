@@ -16,6 +16,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private AudioClip goalSE;
     [SerializeField] private AudioClip overSE;
 
+    private InputAction Bell;
     void Start()
     {
     }
