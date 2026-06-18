@@ -39,11 +39,18 @@ public class BikeMove : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip bellSE;//ベルSE
 
+    [SerializeField] private AudioSource moveAudioSource;
+
+    [SerializeField] private AudioClip moveSE;  // 通常走行
+    [SerializeField] private AudioClip dashSE;  // ダッシュ
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // 本体取得
 
         stamina = maxStamina; // スタミナを満タンにする
+        
+        moveAudioSource.loop = true;
+
     }
     private void Update()
     {
@@ -156,7 +163,34 @@ public class BikeMove : MonoBehaviour
         {
             staminaBar.fillAmount = stamina / maxStamina;
         }
+        // ===== 走行音 =====
+        bool isMoving = rb.linearVelocity.magnitude > 0.5f;
 
+        if (isMoving)
+        {
+            bool actuallyDashing =
+                !isOverheated &&
+                isDashing &&
+                moveInput != 0f &&
+                stamina > 0f;
+
+            AudioClip targetClip = actuallyDashing ? dashSE : moveSE;
+
+            if (moveAudioSource.clip != targetClip)
+            {
+                moveAudioSource.clip = targetClip;
+            }
+
+            if (!moveAudioSource.isPlaying)
+            {
+                moveAudioSource.loop = true;
+                moveAudioSource.Play();
+            }
+        }
+        else
+        {
+            moveAudioSource.Stop();
+        }
     }
 
     // ===== DashPad開始 =====
@@ -180,5 +214,4 @@ public class BikeMove : MonoBehaviour
         Debug.Log("ベルを鳴らす");
         audioSource.PlayOneShot(bellSE, 2.0f);
     }
-
 }
