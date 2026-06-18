@@ -9,12 +9,20 @@ public class TitleManager : MonoBehaviour
     [SerializeField] private string _loadScene; //シーン名を記述
     public AudioSource audioSource;
     public AudioClip clickSE;
-
+    [SerializeField] private float Length=0.5f;
     public void LoadStage(string stageName)
     {
+        StartCoroutine(LoadScene(stageName));
+
+    }
+
+    IEnumerator LoadScene(string stageName)
+    {
         audioSource.PlayOneShot(clickSE);
-        SceneManager.LoadScene(stageName);
+        yield return new WaitForSeconds(Length);
+
         Destroy(GameObject.Find("BGMManager"));
+        SceneManager.LoadScene(stageName);
 
     }
 
