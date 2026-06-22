@@ -5,11 +5,19 @@ public class Cloud : MonoBehaviour
     public float speed = 1f;
     public float distanceFromCamera = 20f;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip cloudSE;
+    [SerializeField] public float minInterval = 1f;
+    [SerializeField] public float maxInterval = 3f;
+
     private Camera cam;
+    private float nextPlayTime;
 
     void Start()
     {
         cam = Camera.main;
+
+        ScheduleNextSound();
     }
 
     void Update()
@@ -21,10 +29,20 @@ public class Cloud : MonoBehaviour
         if (transform.position.x < cam.transform.position.x - distanceFromCamera)
         {
             Vector3 pos = transform.position;
-
             pos.x = cam.transform.position.x + distanceFromCamera;
-
             transform.position = pos;
         }
+
+        // ƒ‰ƒ“ƒ_ƒ€ŠÔŠu‚Å‰¹‚ð–Â‚ç‚·
+        if (Time.time >= nextPlayTime)
+        {
+            audioSource.PlayOneShot(cloudSE,3f);
+            ScheduleNextSound();
+        }
+    }
+
+    private void ScheduleNextSound()
+    {
+        nextPlayTime = Time.time + Random.Range(minInterval, maxInterval);
     }
 }

@@ -4,12 +4,16 @@ public class SnowBall : MonoBehaviour
 {
     [SerializeField] private float moveForce = 15f;
     [SerializeField] private float playerKnockback = 5f;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip snowBallSE;
 
     private Rigidbody2D rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioSource.PlayOneShot(snowBallSE);
+
     }
 
     void FixedUpdate()
