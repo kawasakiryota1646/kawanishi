@@ -34,21 +34,16 @@ public class Judgment : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // 二重実行防止
-        if (isDead) return;
-
-        if (playerManager.IsGoal)
+        if (PlayerManager.State != PlayerManager.GameState.Playing)
             return;
 
-        if (!IsGoal && collision.gameObject.CompareTag(deathTag))
+        if (collision.gameObject.CompareTag(deathTag))
         {
-            isDead = true;
+            PlayerManager.State = PlayerManager.GameState.Dead;
+
             audioSource.PlayOneShot(overSE);
-
             GameOver.text = "GameOver";
-            Debug.Log("死んだ！");
 
-            // Coroutine開始
             StartCoroutine(GameOverDelay());
         }
     }

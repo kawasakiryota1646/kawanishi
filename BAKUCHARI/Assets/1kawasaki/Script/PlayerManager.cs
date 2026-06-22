@@ -8,6 +8,15 @@ using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
 {
+    public enum GameState
+    {
+        Playing,
+        Clear,
+        Dead
+    }
+
+    public static GameState State = GameState.Playing;
+
     public bool IsGoal = false;
     [SerializeField] private TimeCounter timeCounter;
     //•Ï”
@@ -19,6 +28,7 @@ public class PlayerManager : MonoBehaviour
     private InputAction Bell;
     void Start()
     {
+        State = GameState.Playing;
     }
     // Update is called once per frame
     void Update()
@@ -52,20 +62,20 @@ public class PlayerManager : MonoBehaviour
     //ƒS[ƒ‹‚ÉG‚ê‚½‚Æ‚«
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("goal") && !IsGoal)
+        if (PlayerManager.State != GameState.Playing)
+            return;
+
+        if (collision.CompareTag("goal"))
         {
+            Debug.Log("ƒS[ƒ‹");
+            PlayerManager.State = GameState.Clear;
+
             IsGoal = true;
+
             audioSource.PlayOneShot(goalSE);
             timeCounter.StopTime();
 
-            // c‚èŠÔ‚ğ•Û‘¶
-            RecordManager.SaveTime(
-                SceneManager.GetActiveScene().buildIndex,
-                timeCounter.countdown
-            );
-
             StartCoroutine(Clear());
-            Debug.Log("ƒS[ƒ‹‚ÉG‚ê‚½I");
         }
     }
 
