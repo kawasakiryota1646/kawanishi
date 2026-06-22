@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
 {
-    public enum GameState
+    public enum GameState//プレイヤーの状況確認
     {
         Playing,
         Clear,
@@ -26,7 +26,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private AudioClip overSE;
 
     private InputAction Bell;
-    void Start()
+    void Start()//スタート時にプレイ状態を保存する
     {
         State = GameState.Playing;
     }

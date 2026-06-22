@@ -8579,7 +8579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e554f8ff3f4054a85c58cc3800e015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeCounter
-  countdown: 45
+  countdown: 40
   TimeText: {fileID: 269770137}
   GameOver: {fileID: 1869272665}
 --- !u!4 &2060096957
