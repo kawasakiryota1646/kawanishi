@@ -12,6 +12,12 @@ public class Icicle : MonoBehaviour
 
     [SerializeField]
     float delay = 1f;
+
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip icicleSE;
+    [SerializeField] private AudioClip ice;
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -22,8 +28,10 @@ public class Icicle : MonoBehaviour
     public void Fall()
     {
         if (hasFallen) return;
-
         hasFallen = true;
+
+        audioSource.PlayOneShot(icicleSE);
+
         rb.gravityScale = fallGravity;
         StartCoroutine(FallDelay());
 
@@ -33,15 +41,20 @@ public class Icicle : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
-        rb.gravityScale = 3;
+        rb.gravityScale = fallGravity;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("ground"))
         {
-            StartCoroutine(FallDelay());
+            Debug.Log("âÛÇÍÇÈ");
+            // ï\é¶Çè¡Ç∑
+            GetComponent<SpriteRenderer>().enabled = false;
 
-            Destroy(gameObject);
+            // ìñÇΩÇËîªíËÇè¡Ç∑
+            GetComponent<Collider2D>().enabled = false;
+            audioSource.PlayOneShot(ice);
+            Destroy(gameObject, ice.length);
         }
     }
 }
