@@ -68,6 +68,13 @@ public class PlayerManager : MonoBehaviour
         if (collision.CompareTag("goal"))
         {
             Debug.Log("ÉSÅ[Éã");
+
+            int stageNo = SceneManager.GetActiveScene().buildIndex;
+
+            RecordManager.SaveTime(stageNo, timeCounter.countdown);
+
+            Debug.Log("ï€ë∂:" + timeCounter.countdown);
+
             PlayerManager.State = GameState.Clear;
 
             IsGoal = true;
