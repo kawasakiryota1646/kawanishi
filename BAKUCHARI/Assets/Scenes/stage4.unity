@@ -1727,8 +1727,8 @@ MonoBehaviour:
   distanceFromCamera: 20
   audioSource: {fileID: 511254040}
   cloudSE: {fileID: 8300000, guid: 8fe5644b353a04f4ca2c83198490a4ad, type: 3}
-  minInterval: 1
-  maxInterval: 3
+  minInterval: 8
+  maxInterval: 8
 --- !u!212 &511254038
 SpriteRenderer:
   serializedVersion: 2
@@ -1816,7 +1816,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6090,11 +6090,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907724766604336399, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.0225399
+      value: -2.172
       objectReference: {fileID: 0}
     - target: {fileID: 7907724766604336399, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1989801
+      value: -0.443
       objectReference: {fileID: 0}
     - target: {fileID: 7907724766604336399, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       propertyPath: m_LocalPosition.z
