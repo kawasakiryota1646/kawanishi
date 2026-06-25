@@ -6009,6 +6009,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3106201588614236645, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1552139981}
+    - targetCorrespondingSourceObject: {fileID: 3106201588614236645, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1552139982}
   m_SourcePrefab: {fileID: 100100000, guid: 6e820f2232212174f819a3a5a3e03e13, type: 3}
 --- !u!4 &1552139979 stripped
 Transform:
@@ -6148,6 +6151,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1552139982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272746580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef10b346bce4df9438c1477d018cacf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Judgment
+  deathTag: Deathground
+  audioSource: {fileID: 1552139981}
+  overSE: {fileID: 8300000, guid: 7da9f3707d931594098ad7242b4b949d, type: 3}
+  GameOver: {fileID: 1531631253}
 --- !u!1001 &1703199662
 PrefabInstance:
   m_ObjectHideFlags: 0
