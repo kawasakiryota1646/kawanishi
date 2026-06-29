@@ -1583,7 +1583,7 @@ MonoBehaviour:
   speed: 2
   distanceFromCamera: 20
   audioSource: {fileID: 511254040}
-  cloudSE: {fileID: 8300000, guid: b369b569a8846714e9145b6bc23de99b, type: 3}
+  cloudSE: {fileID: 8300000, guid: 7c843493ab4db9a4ca8bd5becb10b618, type: 3}
   minInterval: 15
   maxInterval: 15
 --- !u!212 &511254038
@@ -1673,7 +1673,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
