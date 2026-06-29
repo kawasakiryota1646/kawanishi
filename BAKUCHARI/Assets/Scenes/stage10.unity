@@ -1584,7 +1584,7 @@ MonoBehaviour:
   distanceFromCamera: 20
   audioSource: {fileID: 511254040}
   cloudSE: {fileID: 8300000, guid: b369b569a8846714e9145b6bc23de99b, type: 3}
-  minInterval: 10
+  minInterval: 15
   maxInterval: 15
 --- !u!212 &511254038
 SpriteRenderer:
