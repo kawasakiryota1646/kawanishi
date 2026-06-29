@@ -9,7 +9,7 @@ public class TimeCounter : MonoBehaviour
 
     private PlayerManager playermanager;
     bool IsStop = false;
-    private bool tenSecondAnnounced = false;
+    private bool FifteenSecondAnnounced = false;
     //カウントダウン
     public float countdown = 5.0f;
 
@@ -57,9 +57,9 @@ public class TimeCounter : MonoBehaviour
         TimeText.text = countdown.ToString("f1");
 
         // 15秒アナウンス
-        if (!tenSecondAnnounced && countdown <= 15f)
+        if (!FifteenSecondAnnounced && countdown <= 15f)
         {
-            tenSecondAnnounced = true;
+            FifteenSecondAnnounced = true;
 
             // SEを2回鳴らす
             StartCoroutine(PlayWarningSE());
