@@ -1049,7 +1049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e554f8ff3f4054a85c58cc3800e015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimeCounter
-  countdown: 20
+  countdown: 35
   TimeText: {fileID: 550801386}
   GameOver: {fileID: 251824366}
   audioSource: {fileID: 294179168}
@@ -3118,14 +3118,14 @@ RectTransform:
   m_GameObject: {fileID: 603848902}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6624033, y: 0.6624033, z: 0.6624033}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1159351045}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -87.99999, y: 114}
+  m_AnchoredPosition: {x: -48, y: 114}
   m_SizeDelta: {x: 230, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &603848904
