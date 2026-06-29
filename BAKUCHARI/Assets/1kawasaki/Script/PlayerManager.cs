@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
@@ -20,7 +21,7 @@ public class PlayerManager : MonoBehaviour
     public bool IsGoal = false;
     [SerializeField] private TimeCounter timeCounter;
     //変数
-    public Text ClearText;
+    public TMP_Text ClearText;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip goalSE;
     [SerializeField] private AudioClip overSE;
@@ -88,7 +89,7 @@ public class PlayerManager : MonoBehaviour
 
     IEnumerator Clear()//1.5秒経つと次のステージに行く
     {
-        ClearText.text = "CLEAR!";
+        ClearText.text = "CLEAR";
         yield return new WaitForSeconds(1.5f);
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentScene + 1);
