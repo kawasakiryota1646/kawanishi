@@ -78,8 +78,9 @@ public class BikeMove : MonoBehaviour
             rotateInput = -1f;
 
         // Shiftが押されているか（ダッシュ判定）
-        bool isDashing = Keyboard.current.leftShiftKey.isPressed;
-
+        bool isDashing =
+            Keyboard.current.leftShiftKey.isPressed ||
+            Keyboard.current.rightShiftKey.isPressed;
         // ===== DashPadタイマー =====
         if (isDashPad)
         {
