@@ -42,6 +42,8 @@ public class BikeMove : MonoBehaviour
 
     [SerializeField] private AudioClip moveSE;  // 通常走行
     [SerializeField] private AudioClip dashSE;  // ダッシュ
+    [SerializeField] private AudioClip dashPadSE; //ダッシュ板
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // 本体取得
@@ -197,6 +199,9 @@ public class BikeMove : MonoBehaviour
     {
         isDashPad = true;
         dashPadTimer = dashPadTime;
+
+        // DashPadの効果音
+        audioSource.PlayOneShot(dashPadSE);
     }
 
     // ===== DashPadに触れた時 =====
