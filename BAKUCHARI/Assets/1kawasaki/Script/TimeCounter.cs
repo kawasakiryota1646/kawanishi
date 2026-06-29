@@ -14,7 +14,7 @@ public class TimeCounter : MonoBehaviour
     public float countdown = 5.0f;
 
     //ŠÔ‚ğ•\¦‚·‚é•Ï”
-    public Text TimeText;
+    public TMP_Text TimeText;
     public TMP_Text GameOver;
     void Start()
     {
