@@ -20,8 +20,12 @@ public class GameStartCountDown : MonoBehaviour
         // プレイヤー操作を止める
         Time.timeScale = 0f;
 
+        RectTransform rt = countdownText.GetComponent<RectTransform>();
+        Vector2 originalPos = rt.anchoredPosition; // 元の位置を保存
+
         yield return new WaitForSecondsRealtime(startDelay);
 
+        // カウントダウン
         for (int i = 3; i > 0; i--)
         {
             countdownText.text = i.ToString();
@@ -30,12 +34,16 @@ public class GameStartCountDown : MonoBehaviour
             yield return new WaitForSecondsRealtime(1f);
         }
 
+        // GO!だけ少し左へ
+        rt.anchoredPosition = originalPos + new Vector2(-50f, 0f);
         countdownText.text = "GO!";
-
         audioSource.PlayOneShot(goSE);
+
         yield return new WaitForSecondsRealtime(1f);
 
-        countdownText.text = " ";
+        // 元の位置に戻す
+        rt.anchoredPosition = originalPos;
+        countdownText.text = "";
 
         // ゲーム開始
         Time.timeScale = 1f;

@@ -295,8 +295,8 @@ Transform:
   m_GameObject: {fileID: 112449523}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 277.7594, y: -36.2952, z: 0}
-  m_LocalScale: {x: 345.21686, y: 56.00949, z: 1}
+  m_LocalPosition: {x: 338.6696, y: -36.2952, z: 0}
+  m_LocalScale: {x: 467.04388, y: 56.00949, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1189,7 +1189,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -270039738421603607, guid: 026cef17b0ef68740ab34e598a07695b, type: 3}
+  m_Sprite: {fileID: 8017041888770511133, guid: 407b550d6d14d6242b68feac31dd16ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1209,7 +1209,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10.91, y: 1.19, z: 0}
-  m_LocalScale: {x: 2.4261997, y: 2.474141, z: 0.17012464}
+  m_LocalScale: {x: 2.7503123, y: 2.8046582, z: 0.19285135}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1248,8 +1248,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 2.775
+  m_Offset: {x: -0.009720849, y: 0}
+  m_Radius: 2.4985504
 --- !u!82 &293393881
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2780,7 +2780,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: '                                      '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4599,7 +4599,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.6627451, g: 0.8431373, b: 0.9215687, a: 0}
+  m_BackGroundColor: {r: 0.82745105, g: 0.909804, b: 0.86274517, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -5240,8 +5240,8 @@ Transform:
   m_GameObject: {fileID: 1707330371}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 375.6, y: -38.7929, z: 0}
-  m_LocalScale: {x: 138.15587, y: 50.36758, z: 1}
+  m_LocalPosition: {x: 443.3203, y: -38.7929, z: 0}
+  m_LocalScale: {x: 273.58847, y: 50.36758, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2007059447}
