@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class BikeChange : MonoBehaviour
 {
- public SpriteRenderer bodyRenderer;
+    public SpriteRenderer bodyRenderer;
 
     public Sprite blueSprite;
     public Sprite redSprite;
+
 
     private bool isBlue = true;
     private bool alreadySwitched = false;
@@ -32,4 +33,5 @@ public class BikeChange : MonoBehaviour
     void UpdateBike()
     {
         bodyRenderer.sprite = isBlue ? blueSprite : redSprite;
-    }}
+    }
+}
