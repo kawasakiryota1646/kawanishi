@@ -1573,7 +1573,7 @@ MonoBehaviour:
   tireRenderer: {fileID: 1861973772}
   tireCenterRenderer: {fileID: 789816389}
   tire2Renderer: {fileID: 812948029}
-  tireCenter2Renderer: {fileID: 789816389}
+  tireCenter2Renderer: {fileID: 1392931979}
   blueBody: {fileID: 3653943725503923035, guid: 0e3575d350ad36f4e91a923d156f5047, type: 3}
   blueHandle: {fileID: 5478382031760844387, guid: deedadb8096a51b439878ef6f619aa8d, type: 3}
   bluePedal1: {fileID: 7674300271468057915, guid: 3d4eb48e02bf2ce4db03cbca37d6e00d, type: 3}
