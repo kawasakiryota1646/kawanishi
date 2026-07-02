@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class KirinoBike : MonoBehaviour
 {
+    //元のバイクのSprite
     [Header("Sprite Renderers")]
     public SpriteRenderer bodyRenderer;
     public SpriteRenderer handleRenderer;
@@ -14,7 +15,7 @@ public class KirinoBike : MonoBehaviour
     public SpriteRenderer tire2Renderer;
     public SpriteRenderer tireCenter2Renderer;
 
-
+    //青バイクのSprite
     [Header("Blue Sprites")]
     public Sprite blueBody;
     public Sprite blueHandle;
@@ -27,22 +28,24 @@ public class KirinoBike : MonoBehaviour
     public Sprite blueTire2;
     public Sprite blueTireCenter2;
 
-    [Header("Red Sprites")]
-    public Sprite redBody;
-    public Sprite redHandle;
-    public Sprite redPedal1;
-    public Sprite redPedal2;
-    public Sprite redPedal3;
-    public Sprite redSaddle;
-    public Sprite redTire;
-    public Sprite redTireCenter;
-    public Sprite redTire2;
-    public Sprite redTireCenter2;
+    //キリノバイクのSprite
+    [Header("Kirino Sprites")]
+    public Sprite KirinoBody;
+    public Sprite KirinoHandle;
+    public Sprite KirinoPedal1;
+    public Sprite KirinoPedal2;
+    public Sprite KirinoPedal3;
+    public Sprite KirinoSaddle;
+    public Sprite KirinoTire;
+    public Sprite KirinoTireCenter;
+    public Sprite KirinoTire2;
+    public Sprite KirinoTireCenter2;
 
     private bool isBlue = true;
     private bool alreadySwitched = false;
 
-    void Update()
+
+    void Update()//K,L,Nを押すとスキン変更
     {
         if (Input.GetKey(KeyCode.K) &&
             Input.GetKey(KeyCode.L) &&
@@ -54,6 +57,7 @@ public class KirinoBike : MonoBehaviour
 
     void SwitchBike()
     {
+        //変更済みの場合変更できない
         if (alreadySwitched) return;
 
         isBlue = !isBlue;
@@ -62,7 +66,7 @@ public class KirinoBike : MonoBehaviour
         UpdateBike();
     }
 
-    void UpdateBike()
+    void UpdateBike()//青とキリノバイクを入れ替える
     {
         if (isBlue)
         {
@@ -80,16 +84,16 @@ public class KirinoBike : MonoBehaviour
         }
         else
         {
-            bodyRenderer.sprite = redBody;
-            handleRenderer.sprite = redHandle;
-            pedal1Renderer.sprite = redPedal1;
-            pedal2Renderer.sprite = redPedal2;
-            pedal3Renderer.sprite = redPedal3;
-            saddleRenderer.sprite = redSaddle;
-            tireRenderer.sprite = redTire;
-            tireCenterRenderer.sprite = redTireCenter;
-            tire2Renderer.sprite = redTire2;
-            tireCenter2Renderer.sprite = redTireCenter2;
+            bodyRenderer.sprite = KirinoBody;
+            handleRenderer.sprite = KirinoHandle;
+            pedal1Renderer.sprite = KirinoPedal1;
+            pedal2Renderer.sprite = KirinoPedal2;
+            pedal3Renderer.sprite = KirinoPedal3;
+            saddleRenderer.sprite = KirinoSaddle;
+            tireRenderer.sprite = KirinoTire;
+            tireCenterRenderer.sprite = KirinoTireCenter;
+            tire2Renderer.sprite = KirinoTire2;
+            tireCenter2Renderer.sprite = KirinoTireCenter2;
 
         }
     }

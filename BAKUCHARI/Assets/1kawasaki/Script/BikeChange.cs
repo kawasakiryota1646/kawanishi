@@ -5,7 +5,7 @@ public class BikeChange : MonoBehaviour
     public SpriteRenderer bodyRenderer;
 
     public Sprite blueSprite;
-    public Sprite redSprite;
+    public Sprite umaSprite;
 
 
     private bool isBlue = true;
@@ -13,7 +13,7 @@ public class BikeChange : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.U)&& Input.GetKey(KeyCode.M) && Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.U)&& Input.GetKey(KeyCode.M) && Input.GetKeyDown(KeyCode.A))//U,M,AÇâüÇ∑Ç∆ÉXÉLÉìïœçX
         {
             SwitchBike();
         }
@@ -32,6 +32,6 @@ public class BikeChange : MonoBehaviour
 
     void UpdateBike()
     {
-        bodyRenderer.sprite = isBlue ? blueSprite : redSprite;
+        bodyRenderer.sprite = isBlue ? blueSprite : umaSprite;
     }
 }

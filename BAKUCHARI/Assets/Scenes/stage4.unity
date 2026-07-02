@@ -1434,16 +1434,16 @@ MonoBehaviour:
   blueTireCenter: {fileID: 1009629794065013954, guid: 12b47e0f53ff7e74bb236846a2a77031, type: 3}
   blueTire2: {fileID: 4769386534542599872, guid: f7bbbb743b8c7aa48ac773b068cd2b4e, type: 3}
   blueTireCenter2: {fileID: 1009629794065013954, guid: 12b47e0f53ff7e74bb236846a2a77031, type: 3}
-  redBody: {fileID: 3653943725503923035, guid: de45d37bea5754c4fa1cea1667033fee, type: 3}
-  redHandle: {fileID: 5478382031760844387, guid: 39e7b44316c7af447b78bd284e681717, type: 3}
-  redPedal1: {fileID: 7674300271468057915, guid: 85c4263e441ad7d418eef123d3865dea, type: 3}
-  redPedal2: {fileID: -9134525859963183303, guid: f324df5f066d8ff4cb66f6f187a00190, type: 3}
-  redPedal3: {fileID: -4545894286299190222, guid: df1778478a859f84fbd1d9c816dceecc, type: 3}
-  redSaddle: {fileID: 8146524507535014153, guid: 5d97ab482a7d7834db0ffe4551f11fce, type: 3}
-  redTire: {fileID: 4769386534542599872, guid: 312551817e2f195458e8dc32f2720b23, type: 3}
-  redTireCenter: {fileID: 1009629794065013954, guid: 11e0d57ddd0d796459ccd1a3491bf024, type: 3}
-  redTire2: {fileID: 4769386534542599872, guid: 312551817e2f195458e8dc32f2720b23, type: 3}
-  redTireCenter2: {fileID: 1009629794065013954, guid: 11e0d57ddd0d796459ccd1a3491bf024, type: 3}
+  KirinoBody: {fileID: 3653943725503923035, guid: de45d37bea5754c4fa1cea1667033fee, type: 3}
+  KirinoHandle: {fileID: 5478382031760844387, guid: 39e7b44316c7af447b78bd284e681717, type: 3}
+  KirinoPedal1: {fileID: 7674300271468057915, guid: 85c4263e441ad7d418eef123d3865dea, type: 3}
+  KirinoPedal2: {fileID: -9134525859963183303, guid: f324df5f066d8ff4cb66f6f187a00190, type: 3}
+  KirinoPedal3: {fileID: -4545894286299190222, guid: df1778478a859f84fbd1d9c816dceecc, type: 3}
+  KirinoSaddle: {fileID: 8146524507535014153, guid: 5d97ab482a7d7834db0ffe4551f11fce, type: 3}
+  KirinoTire: {fileID: 4769386534542599872, guid: 312551817e2f195458e8dc32f2720b23, type: 3}
+  KirinoTireCenter: {fileID: 1009629794065013954, guid: 11e0d57ddd0d796459ccd1a3491bf024, type: 3}
+  KirinoTire2: {fileID: 4769386534542599872, guid: 312551817e2f195458e8dc32f2720b23, type: 3}
+  KirinoTireCenter2: {fileID: 1009629794065013954, guid: 11e0d57ddd0d796459ccd1a3491bf024, type: 3}
 --- !u!4 &340262455
 Transform:
   m_ObjectHideFlags: 0
@@ -1863,7 +1863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BikeChange
   bodyRenderer: {fileID: 557774518}
   blueSprite: {fileID: 3653943725503923035, guid: 0e3575d350ad36f4e91a923d156f5047, type: 3}
-  redSprite: {fileID: 4425959235534858062, guid: bd0d6d56a5fea144588ed32ef9c2a9ac, type: 3}
+  umaSprite: {fileID: 4425959235534858062, guid: bd0d6d56a5fea144588ed32ef9c2a9ac, type: 3}
 --- !u!4 &458354366
 Transform:
   m_ObjectHideFlags: 0
