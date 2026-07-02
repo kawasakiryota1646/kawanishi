@@ -4507,6 +4507,80 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 1.860323}
   m_Radius: 1.9405727
+--- !u!1 &1149004882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1149004884}
+  - component: {fileID: 1149004883}
+  m_Layer: 0
+  m_Name: KirinoChange
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1149004883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149004882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 952e19cf100aedc438def1896ca87328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KirinoBike
+  bodyRenderer: {fileID: 1270308800}
+  handleRenderer: {fileID: 1949680417}
+  pedal1Renderer: {fileID: 995978437}
+  pedal2Renderer: {fileID: 79224880}
+  pedal3Renderer: {fileID: 339251137}
+  saddleRenderer: {fileID: 618562096}
+  tireRenderer: {fileID: 412412381}
+  tireCenterRenderer: {fileID: 1215628038}
+  tire2Renderer: {fileID: 2037060127}
+  tireCenter2Renderer: {fileID: 2008059238}
+  blueBody: {fileID: 3653943725503923035, guid: 0e3575d350ad36f4e91a923d156f5047, type: 3}
+  blueHandle: {fileID: 5478382031760844387, guid: deedadb8096a51b439878ef6f619aa8d, type: 3}
+  bluePedal1: {fileID: 7674300271468057915, guid: 3d4eb48e02bf2ce4db03cbca37d6e00d, type: 3}
+  bluePedal2: {fileID: -9134525859963183303, guid: 11cf6ac65b529ae408d51def18a20026, type: 3}
+  bluePedal3: {fileID: -4545894286299190222, guid: 1ef18d65e3dbe9f49b19ae07e34d446a, type: 3}
+  blueSaddle: {fileID: 8146524507535014153, guid: 4ce508e3b8ac74f4192839b9e12a0690, type: 3}
+  blueTire: {fileID: 4769386534542599872, guid: f7bbbb743b8c7aa48ac773b068cd2b4e, type: 3}
+  blueTireCenter: {fileID: 1009629794065013954, guid: 12b47e0f53ff7e74bb236846a2a77031, type: 3}
+  blueTire2: {fileID: 4769386534542599872, guid: f7bbbb743b8c7aa48ac773b068cd2b4e, type: 3}
+  blueTireCenter2: {fileID: 1009629794065013954, guid: 12b47e0f53ff7e74bb236846a2a77031, type: 3}
+  redBody: {fileID: 3653943725503923035, guid: de45d37bea5754c4fa1cea1667033fee, type: 3}
+  redHandle: {fileID: 5478382031760844387, guid: 39e7b44316c7af447b78bd284e681717, type: 3}
+  redPedal1: {fileID: 7674300271468057915, guid: 85c4263e441ad7d418eef123d3865dea, type: 3}
+  redPedal2: {fileID: -9134525859963183303, guid: f324df5f066d8ff4cb66f6f187a00190, type: 3}
+  redPedal3: {fileID: -4545894286299190222, guid: df1778478a859f84fbd1d9c816dceecc, type: 3}
+  redSaddle: {fileID: 8146524507535014153, guid: 5d97ab482a7d7834db0ffe4551f11fce, type: 3}
+  redTire: {fileID: 4769386534542599872, guid: 312551817e2f195458e8dc32f2720b23, type: 3}
+  redTireCenter: {fileID: 1009629794065013954, guid: 11e0d57ddd0d796459ccd1a3491bf024, type: 3}
+  redTire2: {fileID: 4769386534542599872, guid: 312551817e2f195458e8dc32f2720b23, type: 3}
+  redTireCenter2: {fileID: 1009629794065013954, guid: 11e0d57ddd0d796459ccd1a3491bf024, type: 3}
+--- !u!4 &1149004884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149004882}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.63532, y: -2.05759, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1157634915
 GameObject:
   m_ObjectHideFlags: 0
@@ -10714,6 +10788,53 @@ Transform:
   - {fileID: 1248607378}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2144051654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2144051656}
+  - component: {fileID: 2144051655}
+  m_Layer: 0
+  m_Name: UMAChange
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2144051655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144051654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1432e2ca01a99f34bba3c40a952cb707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BikeChange
+  bodyRenderer: {fileID: 1270308800}
+  blueSprite: {fileID: 3653943725503923035, guid: 0e3575d350ad36f4e91a923d156f5047, type: 3}
+  redSprite: {fileID: 4425959235534858062, guid: bd0d6d56a5fea144588ed32ef9c2a9ac, type: 3}
+--- !u!4 &2144051656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144051654}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.49221, y: -2.3609, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -10729,3 +10850,5 @@ SceneRoots:
   - {fileID: 2007059447}
   - {fileID: 1836988251}
   - {fileID: 533500296}
+  - {fileID: 2144051656}
+  - {fileID: 1149004884}
