@@ -25,7 +25,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip goalSE;
     [SerializeField] private AudioClip overSE;
-
+    [SerializeField] private ParticleSystem particle;
     private InputAction Bell;
     void Start()//スタート時にプレイ状態を保存する
     {
@@ -80,6 +80,7 @@ public class PlayerManager : MonoBehaviour
 
             IsGoal = true;
 
+            particle.Play();
             audioSource.PlayOneShot(goalSE);
             timeCounter.StopTime();
 
