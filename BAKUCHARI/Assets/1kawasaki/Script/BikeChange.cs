@@ -7,6 +7,7 @@ public class BikeChange : MonoBehaviour
     public Sprite blueSprite;
     public Sprite umaSprite;
 
+    [SerializeField] private ParticleSystem particle;
 
     private bool isBlue = true;
     private bool alreadySwitched = false;
@@ -15,6 +16,9 @@ public class BikeChange : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.U)&& Input.GetKey(KeyCode.M) && Input.GetKeyDown(KeyCode.A))//U,M,A‚ğ‰Ÿ‚·‚ÆƒXƒLƒ“•ÏX
         {
+
+            particle.Play();
+
             SwitchBike();
         }
     }

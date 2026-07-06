@@ -44,6 +44,7 @@ public class KirinoBike : MonoBehaviour
     private bool isBlue = true;
     private bool alreadySwitched = false;
 
+    [SerializeField] private ParticleSystem particle;
 
     void Update()//K,L,N‚ğ‰Ÿ‚·‚ÆƒXƒLƒ“•ÏX
     {
@@ -51,6 +52,9 @@ public class KirinoBike : MonoBehaviour
             Input.GetKey(KeyCode.L) &&
             Input.GetKeyDown(KeyCode.N))
         {
+            particle.Play();
+
+
             SwitchBike();
         }
     }
