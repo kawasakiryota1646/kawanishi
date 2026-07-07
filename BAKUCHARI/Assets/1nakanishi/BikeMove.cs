@@ -67,14 +67,14 @@ public class BikeMove : MonoBehaviour
         float rotateInput = 0f; // 回転入力
 
         // ===== 入力処理 =====
-        if (Keyboard.current.wKey.isPressed)
+        if (Keyboard.current.wKey.isPressed || Keyboard.current.upArrowKey.isPressed)
             moveInput = 1f;
-        else if (Keyboard.current.sKey.isPressed)
+        else if (Keyboard.current.sKey.isPressed || Keyboard.current.downArrowKey.isPressed)
             moveInput = -1f;
 
-        if (Keyboard.current.aKey.isPressed)
+        if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
             rotateInput = 1f;
-        else if (Keyboard.current.dKey.isPressed)
+        else if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
             rotateInput = -1f;
 
         // Shiftが押されているか（ダッシュ判定）
