@@ -9136,7 +9136,7 @@ MonoBehaviour:
   KirinoTireCenter: {fileID: 1009629794065013954, guid: 11e0d57ddd0d796459ccd1a3491bf024, type: 3}
   KirinoTire2: {fileID: 4769386534542599872, guid: 312551817e2f195458e8dc32f2720b23, type: 3}
   KirinoTireCenter2: {fileID: 1009629794065013954, guid: 11e0d57ddd0d796459ccd1a3491bf024, type: 3}
-  particle: {fileID: 1032248620}
+  particle: {fileID: 1322181232}
 --- !u!4 &1107706030
 Transform:
   m_ObjectHideFlags: 0
