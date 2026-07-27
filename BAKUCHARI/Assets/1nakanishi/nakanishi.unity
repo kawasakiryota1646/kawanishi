@@ -389,7 +389,7 @@ Transform:
   m_GameObject: {fileID: 167697508}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.09394035, w: 0.9955779}
-  m_LocalPosition: {x: 36.1, y: -5.88, z: 0}
+  m_LocalPosition: {x: 36.292, y: -5.88, z: 0}
   m_LocalScale: {x: 12.736629, y: 1.6388756, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3631,12 +3631,19 @@ MonoBehaviour:
   motorSpeed: 10
   rotateSpeed: 20
   dashPower: 50
+  dashPadPower: 100
+  dashPadTime: 2
   maxStamina: 30
   stamina: 0
   staminaUseRate: 10
   staminaRecoverRate: 5
   overheatRecoverRate: 10
   staminaBar: {fileID: 954534799}
+  audioSource: {fileID: 0}
+  bellSE: {fileID: 0}
+  moveSE: {fileID: 0}
+  dashSE: {fileID: 0}
+  dashPadSE: {fileID: 0}
 --- !u!1 &1810465105
 GameObject:
   m_ObjectHideFlags: 0
